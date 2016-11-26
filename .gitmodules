@@ -1,0 +1,3 @@
+[submodule "crud-ex-backend-yesod"]
+	path = crud-ex-backend-yesod
+	url = https://github.com/rpeszek/crud-ex-backend-yesod.git
