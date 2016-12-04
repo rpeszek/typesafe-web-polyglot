@@ -1,8 +1,8 @@
 [submodule "crud-ex-backend-yesod"]
 	path = crud-ex-backend-yesod
 	url = https://github.com/rpeszek/crud-ex-backend-yesod.git
-  branch = 577917ecb39a6356446171be4fe51181927afcd0
+	branch = a6877b36eda7a2130139047d2c815148c4bea2d1
 [submodule "crud-ex-frontend-elm"]
 	path = crud-ex-frontend-elm
 	url = https://github.com/rpeszek/crud-ex-frontend-elm.git
-  branch = 9aba98979f885d6eed1c434f32b75007b41b4535 
+	branch = cda2976ce65cfd284ab41210b6ee11c54ebb4e43 

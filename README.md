@@ -12,5 +12,11 @@ these two technologies.
 
 Refer to READMEs in these 'child' projects to see how to compile/run them.
 
-This project uses GIT submodules.  I included git-cheatsheet.txt. I am clueless about VCS stuff
-and I hope it is helpful and correct.
+This project uses GIT submodules.  To clone use
+```
+git clone --recursive https://github.com/rpeszek/typesafe-web-polyglot.git
+```
+Submodules reference exact head IDs, to update submodules use
+```
+git submodule update
+```
