@@ -18,18 +18,8 @@ git push --recurse-submodules=check
 git clone --recursive https://github.com/rpeszek/typesafe-web-polyglot.git
 
 ## pull
-git submodule update
-
-##
-## do not use remote like so, since this project configures HEAD ID for each submodule
-## and that does not seem to work
-# git submodule update --remote
-
-git submodule sync
-
+git submodule update --remote
 
 ## utils
 git config --global diff.submodule log
 git diff
-## shows current head ID (can be set on branch in .gitmodules)
-git rev-parse HEAD 

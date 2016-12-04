@@ -1,3 +1,4 @@
+
 I hope to keep adding to this project over time (years?) adding replaceable 
 front-end and back-end alternatives.
 
@@ -12,11 +13,16 @@ these two technologies.
 
 Refer to READMEs in these 'child' projects to see how to compile/run them.
 
-This project uses GIT submodules.  To clone use
+__Note:__  
+Submodule projects references here are __likely to be old versions__. To clone use
 ```
 git clone --recursive https://github.com/rpeszek/typesafe-web-polyglot.git
 ```
-Submodules reference exact head IDs, to update submodules use
+and to get the latest version use
 ```
-git submodule update
+git submodule update --remote
 ```
+or __navigate to the latest version__ if browsing them on github.  
+
+It appears that setting SHA head ids for subprojects does not work well :-1: with current version of git.
+ 
