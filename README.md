@@ -18,11 +18,20 @@ Submodule projects references here are __likely to be old versions__. To clone u
 ```
 git clone --recursive https://github.com/rpeszek/typesafe-web-polyglot.git
 ```
-and to get the latest version use
+and to get the latest version (see nested submodules below) use
 ```
-git submodule update --remote
+git submodule update --remote --recursive
 ```
 or __navigate to the latest version__ if browsing them on github.  
+
+*Nested Submodules*  
+Because Elm project uses dependencies that have not been migrated to Elm v.018 I had to include
+them as submodule in the crud-ex-backend-yesod project.  Hence we have a nested submodule situation and git commands (including git submodule update --init --recursive) does not seem to work well.  Either clone this project again or run an explicit 
+'''
+git clone https://github.com/benthepoet/elm-purecss.git
+''' 
+in the crud-ex-frontend-elm/dependencies folder.  Sorry I will try to get rid of nested submodules moving forward.
+
 
 It appears that setting SHA head ids for subprojects does not work well :-1: with current version of git.
  
