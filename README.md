@@ -1,20 +1,20 @@
+'Umbrella' project that collects various example CRUD applications that share a common HTTP interface.
 
-I hope to keep adding to this project over time (years?) adding replaceable 
-front-end and back-end alternatives.
+__Goals__:  
+My goal is to implement the same CRUD using different choices of front-end and back-end technologies.  I want to focus on technologies that offer strong static type checking and functional programming benefits.
 
-The idea is implement CRUD using a Web API and a comprehensive entity (called a Thing).
-That Web API should define both back-end HTTP CRUD interface as well as front-end  
-hash URL fragments dispatch. This should allow for replaceable back-end and front-end implementations
-working interchangeably with each other.
+The glue that holds all of this together is a web API which defines both back-end HTTP interface as well as front-end hash URL-fragment dispatch. 
+This web API could be either hand-coded independently in each of the implementations or generated from a common type definition (e.g. Servant API to Elm).
 
-Currently I have only Elm front-end and Yesod back-end.
-Over next few moths my goal is to refine what Thing is and what the CRUD can actually do using just 
-these two technologies.
+__Current implementations__:
+* [crud-ex-frontend-elm](https://github.com/rpeszek/crud-ex-frontend-elm.git): Elm front-end.
+* [crud-ex-backend-yesod](https://github.com/rpeszek/crud-ex-backend-yesod.git): Haskell Yesod web app.
+* [crud-ex-backend-servant](https://github.com/rpeszek/crud-ex-backend-servant.git): Haskell Servant Web API, back-end and more.
 
 Refer to READMEs in these 'child' projects to see how to compile/run them.
 
-__Note:__  
-Submodule projects references here are __likely to be old versions__. To clone use
+__Git:__  
+Each of the implementations has its own project and is listed here as a submodule. To clone use
 ```
 git clone --recursive https://github.com/rpeszek/typesafe-web-polyglot.git
 ```
@@ -25,13 +25,8 @@ git submodule update --remote --recursive
 or __navigate to the latest version__ if browsing them on github.  
 
 *Nested Submodules*  
-Because Elm project uses dependencies that have not been migrated to Elm v.018 I had to include
-them as submodule in the crud-ex-backend-yesod project.  Hence we have a nested submodule situation and git commands (including git submodule update --init --recursive) does not seem to work well.  Either clone this project again or run an explicit 
-'''
+Because my Elm project uses a package that has not been migrated to Elm v.018, I had to include that dependency as a submodule.  Thus, I have a nested submodule situation and git commands (including git submodule update --init --recursive) do not seem to work well.  Either clone this project again or run an explicit 
+```
 git clone https://github.com/benthepoet/elm-purecss.git
-''' 
-in the crud-ex-frontend-elm/dependencies folder.  Sorry I will try to get rid of nested submodules moving forward.
-
-
-It appears that setting SHA head ids for subprojects does not work well :-1: with current version of git.
- 
+```
+in the crud-ex-frontend-elm/dependencies folder.  I will try to get rid of nested submodules moving forward.
