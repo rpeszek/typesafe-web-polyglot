@@ -18,7 +18,7 @@ Each of the implementations has its own project and is listed here as a submodul
 ```
 git clone --recursive https://github.com/rpeszek/typesafe-web-polyglot.git
 ```
-and to get the latest version (see nested submodules below) use
+and to get the latest version (see nested submodules below) try
 ```
 git submodule update --remote --recursive
 ```

@@ -4,3 +4,6 @@
 [submodule "crud-ex-frontend-elm"]
 	path = crud-ex-frontend-elm
 	url = https://github.com/rpeszek/crud-ex-frontend-elm.git
+[submodule "crud-ex-backend-servant"]
+	path = crud-ex-backend-servant
+	url = https://github.com/rpeszek/crud-ex-backend-servant.git
