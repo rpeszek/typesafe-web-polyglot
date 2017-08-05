@@ -6,10 +6,10 @@ __Goals__:
 My goal is to implement the same CRUD using different choices of front-end and back-end technologies.  I want to focus on FP technologies that offer strong static type checking.
 
 _Polymorphism_:   
-Is also my big goal. CRUD logic is implemented once and can be used across CRUD entities.  
+Is also my big goal. Various aspects of CRUD logic are implemented once and can be used across CRUD entities.  CRUD == no business logic so things stay somewhat dull.
 
 _Client side hash routing_:  
-
+CRUD components are agnostic of each other existence, presentation is dispatched using hash URL routing.
 
 __Current implementations__:
 * [crud-ex-frontend-elm](https://github.com/rpeszek/crud-ex-frontend-elm.git): Elm front-end.
