@@ -13,9 +13,10 @@ CRUD components are agnostic of each other existence, presentation is dispatched
 
 __Current implementations__:
 * [crud-ex-frontend-elm](https://github.com/rpeszek/crud-ex-frontend-elm.git): Elm front-end.
-* [crud-ex-frontend-purescript](https://github.com/rpeszek/crud-ex-frontend-purescript) Purescript front-end.
+* [crud-ex-frontend-purescript](https://github.com/rpeszek/crud-ex-frontend-purescript) PureScript front-end.
 * [crud-ex-backend-yesod](https://github.com/rpeszek/crud-ex-backend-yesod.git): Haskell Yesod web app.
-* [crud-ex-backend-servant](https://github.com/rpeszek/crud-ex-backend-servant.git): Haskell Servant Web API, back-end and more.
+* [crud-ex-backend-servant (master)](https://github.com/rpeszek/crud-ex-backend-servant.git): Haskell Servant Web API, back-end and more on master branch.
+* [crud-ex-backend-servant (eta-jetty)](https://github.com/rpeszek/crud-ex-backend-servant/tree/eta-jetty): [eta](http://eta-lang.org/) port that runs in jetty server on eta-jetty branch.
 * [crud-ex-backent-http4s](https://github.com/rpeszek/crud-ex-backent-http4s): Scala http4s backend with STM and doobie SQL persistence.
 
 Refer to READMEs in these 'child' projects for more info and to see how to compile/run them.
